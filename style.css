@@ -8,6 +8,7 @@ html,body {
     font-family: 'Poppins', sans-serif;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
 }
 
 
@@ -95,11 +96,23 @@ cursor: pointer;
 }
 .shoe img{
     position: relative;
-    top: -150px;
+    top: -180px;
     left: -50px;
     width: 600px;
     height: 650px;
-    transform: rotate(35deg);
+    transform: rotate(30deg);
+    z-index: 3;
+}
+.shadow{
+    position: relative;
+    top: 240px;
+    left: -50px;
+    width: 480px;
+    height: 10px;
+    box-shadow: -5px 35px 10px 10px black;
+    border-radius: 30%;
+    z-index: 2;
+    transform: rotate(30deg);
 }
 
 
@@ -169,8 +182,8 @@ cursor: pointer;
     bottom: 0;
     color: grey;
     opacity: 0.1;
-    overflow: hidden;
 }
+
 .faded h1{
     font-size: 15rem;
 }
