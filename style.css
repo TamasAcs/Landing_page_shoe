@@ -94,7 +94,8 @@ cursor: pointer;
     height: 400px;
     border-radius: 50%;
     background-color: rgb(209, 166, 58);
-    box-shadow: 3px 0px 50px 1px black;
+    box-shadow: 3px 0px 50px 1px black, 
+    inset 20px 0px 25px 0px black;
 }
 .shoe img{
     position: relative;
