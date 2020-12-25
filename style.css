@@ -21,6 +21,8 @@ html,body {
     height: 70px;
     align-items: center;
 padding: 20px 20px;
+position: relative;
+z-index: 4;
 }
 .logo{
     display: flex;
@@ -125,7 +127,7 @@ cursor: pointer;
     width: 50%;
     position: absolute;
     right: 0;
-    padding: 0 40px;
+    padding: 0 60px;
 }
 .description h2{
     text-transform: uppercase;
@@ -154,6 +156,7 @@ cursor: pointer;
 }
 .description button:hover{
     cursor: pointer;
+    opacity: 0.8;
 }
 .images{
     align-items: center;
@@ -168,10 +171,12 @@ cursor: pointer;
 }
 .images img:hover{
     cursor: pointer;
+    transform:scale(1.4);
 }
 
 .images i:hover{
     cursor: pointer;
+    transform:scale(1.2);
 }
 
 .faded{
@@ -186,4 +191,185 @@ cursor: pointer;
 
 .faded h1{
     font-size: 15rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .logo {
+        width: 25%;
+    }
+    .shoe img {
+        top: -140px;
+        width: 450px;
+        height: 500px;
+    }
+    .round_bg {
+        width: 300px;
+        height: 300px;
+    }
+    .shadow {
+        top: 180px;
+        left: -50px;
+        width: 380px;
+        height: 10px;
+    }
+    .description h1 {
+        font-size: 3rem;
+    }
+    .description p {
+        font-size: 0.8rem;
+    }
+    .images {
+        width: 300px;
+    }
+    .faded {
+        bottom: -80px;
+    }
+    .faded h1 {
+        font-size: 9rem;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    #main {
+        flex-direction: column;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 50%;
+        width: 70%;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 40px 40px 0 40px;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    html, body {
+        font-family: 'Poppins', sans-serif;
+        width: 100%;
+        height: 130vh;
+        overflow: visible;
+    }
+    #main {
+        height: 120vh;
+        position: relative;
+    }
+    .black {
+        height: 140vh;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        height: 100px;
+        align-items: center;
+        padding: 20px 20px;
+        position: relative;
+        z-index: 4;
+    }
+    .logo {
+        width: 25%;
+        display: block;
+    }
+    .img {
+        overflow: hidden;
+        position: relative;
+        margin-left: -20px;
+        width: 310px;
+        padding-left: 25px;
+        padding-top: 25px;
+        margin-top: -25px;
+    }
+    .navlist {
+        width: 50%;
+        display: block;
+        padding-top: 20px;
+    }
+    .navlist ul {
+        display: block;
+        justify-content: space-evenly;
+        list-style: none;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    .icons {
+        width: 10%;
+        height: 100%;
+        display: inline-block;
+        align-items: center;
+    }
+    .icons i{
+        margin-top: 20px;
+    }
+.shoe {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shoe img {
+    top: -140px;
+    left: -40px;
+    width: 400px;
+    height: 450px;
+    transform: rotate(30deg);
+}
+.round_bg {
+    width: 250px;
+    height: 250px;
+}
+.shadow {
+    top: 150px;
+    left: -30px;
+    width: 320px;
+    height: 20px;
+}
+.description {
+    padding: 0 10px;
+}
+.description h1 {
+    font-size: 2rem;
+}
+
+.description h2 {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 0.6rem;
+}
+.description p{
+    line-height: 1rem;
+}
+.description button {
+    margin: 10px 0;
+    width: 150px;
+    line-height: 2rem;
+}
+.images {
+    display: grid;
+    width: 200px;
+    height: 150px;
+    grid-template-columns: repeat(2,1fr);
+}
+.faded {
+    height: 50px;
+    bottom: -15px;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+    padding: 0;
+}
+.faded h1 {
+    font-size: 4.2rem;
+    height: 50px;
+}
 }
